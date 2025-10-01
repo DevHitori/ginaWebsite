@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+/* Dark mode only: Night aesthetics */
+:root {
+  --background: #0b0f19; /* deep navy */
+  --surface: #111827; /* slate-900 */
+  --muted: #1f2937; /* gray-800 */
+  --foreground: #e5e7eb; /* gray-200 */
+  --accent: #60a5fa; /* blue-400 */
+  --accent-2: #22d3ee; /* cyan-400 */
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+/* Subtle gradient background */
+.bg-night {
+  background: radial-gradient(1200px 600px at 10% -10%, rgba(96,165,250,0.08), transparent),
+              radial-gradient(1000px 500px at 100% 0%, rgba(34,211,238,0.06), transparent),
+              linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0) 40%);
+}
